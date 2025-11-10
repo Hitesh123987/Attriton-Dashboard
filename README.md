@@ -76,3 +76,28 @@ CALCULATE(
     Employee[Attrition] = "Yes",
     Employee[Gender] = "Female"
 )
+
+# visuals                                                 
+
+ **KPI Cards:**                Total Employees, Employees Quit, Attrition %, Active Employees, Average Age 
+ **Bar Chart;**                Attrition by Education Field                                                
+ **Pie Chart:**                Attrition by Department                                                     
+ **Donut Chart:**              Attrition by Age Group                                                      
+ **Clustered Column Chart:**   Attrition by Age Group & Gender                                             
+ **Matrix Table:**             Work-Life Balance per Job Role                                              
+ **Gauge Chart:**              Average Job Satisfaction score        
+
+# Key Insights
+
+1. Total Employees: 1470                     
+2. Employees Quit: 237                  
+3. Attrition Rate: 16.12%                  
+4. Average Age: 36.92 Years                   
+5. Active Employees: 1233                
+
+🔹 Highest Attrition Department: Sales                   
+🔹 Most affected age group: 25–34 years                   
+🔹 Highest attrition education field: Life Sciences                 
+🔹 Overall job satisfaction is low: 2.73                   
+🔹 Work-life balance issues visible across multiple job roles              
+
