@@ -11,7 +11,7 @@ The goal of this project is to analyze employee attrition and provide useful HR 
 2️⃣ Data Cleaning & Validation:
 In Power Query:
 Enabled Column Quality, Column Distribution, Column Profile
-Switched profiling to Entire Dataset
+Switched profiling to Entire Dataset.               
 Verified: ✅ No missing values ✅ No errors ✅ Correct data types
 
 3️⃣ Data Modeling:
