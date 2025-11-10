@@ -19,52 +19,52 @@ Converted Age, Monthly Income, Job Satisfaction to correct numeric type
 Created calculated measures for KPIs
 Built relationships between tables (if multiple tables existed)
 
-4️⃣ Dashboard Design
-Added visuals:
-✅ Card KPIs → Total Employees, Employees Quit, Attrition %, Active Employees, Average Age
-✅ Bar Chart → Attrition by Education
-✅ Pie/Donut Chart → Attrition by Department & Age Group
-✅ Clustered Column → Attrition by Age Group & Gender
-✅ Matrix → Work-Life Balance by Job Role
-✅ Gauge → Job Satisfaction score
+4️⃣ Dashboard Design:         
+Added visuals:         
+✅ Card KPIs → Total Employees, Employees Quit, Attrition %, Active Employees, Average Age       
+✅ Bar Chart → Attrition by Education      
+✅ Pie/Donut Chart → Attrition by Department & Age Group     
+✅ Clustered Column → Attrition by Age Group & Gender       
+✅ Matrix → Work-Life Balance by Job Role       
+✅ Gauge → Job Satisfaction score       
 
 5️⃣ Publishing
 Report published to Power BI Service
 Dashboard screenshot exported and added
 
 # DAX Measures
-1. Total Employees =
+1. Total Employees =               
 COUNTROWS(Employee)
 
-2. Employees Quit =
+2. Employees Quit =                 
 CALCULATE(
     COUNTROWS(Employee),
     Employee[Attrition] = "Yes"
 )
 
-3. Active Employees =
+3. Active Employees =                 
 CALCULATE(
     COUNTROWS(Employee),
     Employee[Attrition] = "No"
 )
 
-4. Attrition % =
+4. Attrition % =                  
 DIVIDE([Employees Quit], [Total Employees], 0)
 
-5. Average Age =
+5. Average Age =                         
 AVERAGE(Employee[Age])
 
-6. Avg Job Satisfaction =
+6. Avg Job Satisfaction =                    
 AVERAGE(Employee[JobSatisfaction])
 
-7. Attrition by Department =
+7. Attrition by Department =                    
 CALCULATE(
     COUNTROWS(Employee),
     Employee[Attrition] = "Yes",
     ALLEXCEPT(Employee, Employee[Department])
 )
 
-8. Male Attrition =
+8. Male Attrition =                       
 CALCULATE(
     COUNTROWS(Employee),
     Employee[Attrition] = "Yes",
